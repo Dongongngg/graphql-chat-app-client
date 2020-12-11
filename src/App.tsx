@@ -34,7 +34,7 @@ type MessagesProps = {
 
 //	sub
 const wsLink = new WebSocketLink({
-	uri: `ws://jingfu-chat-server.herokuapp.com/`,
+	uri: `wss://jingfu-chat-server.herokuapp.com/`,
 	options: {
 		reconnect: true,
 	},
