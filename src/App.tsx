@@ -34,7 +34,7 @@ type MessagesProps = {
 
 //	sub
 const wsLink = new WebSocketLink({
-	uri: `ws://localhost:4000/`,
+	uri: `ws://jingfu-chat-server.herokuapp.com/`,
 	options: {
 		reconnect: true,
 	},
@@ -42,7 +42,7 @@ const wsLink = new WebSocketLink({
 //	client
 const client = new ApolloClient({
 	link: wsLink,
-	uri: 'http://localhost:4000',
+	uri: 'https://jingfu-chat-server.herokuapp.com/',
 	cache: new InMemoryCache(),
 });
 
